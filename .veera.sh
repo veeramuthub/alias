@@ -1,6 +1,7 @@
 #system
 alias sysupdate='sudo apt update'
 alias aptlog='cat /var/log/apt/history.log'
+alias removealias='rm -rf ~/.veera.sh && sed -i '$ d' ~/.bashrc && bash'
 getinstallfiles() {
 dpkg -L $1
 }
