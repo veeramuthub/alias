@@ -1,5 +1,6 @@
 #system
 alias sysupdate='sudo apt update'
+alias aptlog='cat /var/log/apt/history.log'
 getinstallfiles() {
 dpkg -L $1
 }
