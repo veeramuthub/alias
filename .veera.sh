@@ -49,6 +49,7 @@ alias nginxerrlog='tail -f /var/log/nginx/error.log'
 
 #Network chores
 alias livetcp='sudo tcpdump'
+alias livetcpwome='sudo tcpdump '\''(port 22 and not host 10.10.3.226) or (not port 22)'\'''
 alias liveicmp='sudo tcpdump -i any icmp'
 alias prognports='sudo netstat -tulpn | grep LISTEN'
 alias prog80='sudo netstat -tlnp | grep :80'
